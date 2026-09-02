@@ -5,17 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Love Letter</title>
     <meta name="description" content="A minimal, cute single-page love letter web app with soft pastel aesthetics and interactive hugs." />
-    <meta property="og:title" content="Love Letter" />
-    <meta property="og:description" content="A minimal, cute single-page love letter web app with soft pastel aesthetics and interactive hugs." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Nunito:ital,wght@0,400;0,500;0,600;1,400&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+        font-family: 'Nunito', 'Segoe UI', Tahoma, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: #78350f;
+        padding: 20px;
+      }
+      .container {
+        background: white;
+        padding: 60px 40px;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        text-align: center;
+        max-width: 600px;
+      }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        font-family: 'Sacramento', cursive;
+        color: #be123c;
+      }
+      p {
+        font-size: 1.1em;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        color: #92400e;
+      }
+      .heart {
+        font-size: 4em;
+        animation: beat 0.6s infinite;
+        display: inline-block;
+      }
+      @keyframes beat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+      }
+    </style>
   </head>
-  <body class="bg-[#fff1f2] text-stone-800 antialiased selection:bg-rose-200 selection:text-rose-900">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body>
+    <div class="container">
+      <div class="heart">💕</div>
+      <h1>Love Letter</h1>
+      <p>A minimal, cute single-page love letter web app with soft pastel aesthetics and interactive hugs.</p>
+    </div>
   </body>
 </html>
-
