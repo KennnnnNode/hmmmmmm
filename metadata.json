@@ -2,5 +2,7 @@
   "name": "Love Letter",
   "description": "A minimal, cute single-page love letter web app with soft pastel aesthetics and interactive hugs.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
